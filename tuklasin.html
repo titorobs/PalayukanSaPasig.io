@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Page</title>
+    <style>
+
+body, html {
+    overflow-x: hidden;
+}
+
+        body {
+            background: linear-gradient(45deg, #3C1414, #65000B); /* Gradient background */
+            color: #FFFFFF; /* White text for better contrast */
+            font-family: 'Helvetica Neue', Arial, sans-serif; /* Better font choice */
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+    width: 100%;
+    transition: background 0.5s ease;
+    background-color: #250902;
+    top: 0;
+    z-index: 99999999;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    margin: 10px auto;
+    width: 90%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 0 20px;
+    color: #F1F6F9;
+    font-size: 14px;
+}
+        .main-content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Enhanced shadow effect */
+            text-align: center;
+        }
+        .title {
+            font-size: 32px; /* Slightly larger font size */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 400px;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Add a shadow to images */
+            transition: transform 0.3s ease; /* Smooth transition for hover effect */
+        }
+        .image-container img:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+        .description {
+            font-size: 20px; /* Slightly larger font size */
+            line-height: 1.6; /* Improved line height for readability */
+            text-align: justify;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #FFFFFF;
+            color: #3C1414;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+            text-decoration: none;
+        }
+
+        .description p a{
+            text-decoration: none;
+            color: rgba(255, 0, 0, 0.774);
+        }
+
+        .description p a:hover{
+            color: rgba(1, 175, 255, 0.514);
+        }
+
+
+        .mga-kuhang-larawan {
+            color: #BBBBBB; /* Lighter gray for less emphasis */
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+        .bold-red {
+            font-weight: bold;
+            color: #FF0000; /* Brighter red for more emphasis */
+        }
+        .back-button {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .back-button a {
+            color: #FFFFFF;
+            background-color: #65000B;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for smooth effect */
+        }
+        .back-button a:hover {
+            background-color: #8B0011;
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        .container {
+            width: 100%;
+            height: 290vh;
+            background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
+            background-position: center;
+            background-size: cover;
+            box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+<div class="container">
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="buting.html">BUTING</a></li>
+                <li><a href="maybunga.html">MAYBUNGA</a></li>
+                <li><a href="rosario.html">ROSARIO</a></li>
+                <li><a href="comment.html">KOMENTO</a></li>
+                <li><a href="dictionary.html">DIKSYONARYO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="title">ANG KULTURA NG PAGPAPALAYOK SA LUNGSOD</div>
+        
+        <div class="image-container">
+            <img src="/img/pasigPottery.jpg" alt="Image 1">
+            <img src="img/pasigPottery2.jpg" alt="Image 2">
+        </div>
+        
+        <p class="mga-kuhang-larawan"><i>Mga kuhang larawan ni Angelica Macanas mula sa librong Pasig Profile of Progress</i></p>
+        
+        <div class="description">
+            <p>
+                ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ Sa pag-ugat sa kasaysayan, ang lungsod ng Pasig ay naging tanyag sa buong Pilipinas bilang pagawaan ng palayok (Encyclopedia Britannica, 1911). Sa katunayan, ito ang sagisag ng siyudad sa isinagawang Rizal Provincial Fair and Exposition noong taong 1948 (Castro, 2019). Maliban dito, nakilala rin ang mga palayok na likha ng mga Pasigueno sa ibang bansa sapagkat naitampok ito sa prestihiyong eksibit sa Madrid noong taong 1887 (Exposicion General de las Islas Filipinas, Madrid 1887). Subalit nang dumating ang mga Hapones, hindi na lamang palayok ang ginagawa dahil nagsimula na ring ipakilala ang paggawa ng paso noong taong 1942 (Castro, 2019). Hindi nagtagal, parehong naging kilala ang pagpapalayok at pagpapaso bilang bahagi ng kultura at industriya sa lungsod ng Pasig.
+            </p>
+        </div>
+
+        <div class="image-container">
+            <img src="img/pots.jpg" alt="Image 3">
+        </div>
+        <p class="mga-kuhang-larawan"><i>Kuhang larawan ni Angelica Macanas mula sa Palayukan ni G. Michael</i></p>
+        <div class="description">
+            <p>
+                ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ Ayon sa mga dating magpapalayok na nakapanayam, ang mga nalilikhang palayok ay nakarating na sa iba’t ibang lugar sa Pilipinas katulad ng Pangasinan, Maynila, Bulacan, Antipolo at Nueva Ecija.
+            </p>
+        </div>
+        
+        <div class="image-container">
+            <img src="img/DEBUHO.jpg" alt="Image 4">
+        </div>
+        <p class="mga-kuhang-larawan"><i>Kuhang larawan ni Angelica Macanas mula sa librong Pasig: Noon, Ngayon at Bukas</i></p>
+        <div class="description">
+            <p><a href="dictionary.html#dibuho">Dibuho</a> ni Damian Domingo noong 1827</p>
+            <p>
+                ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎Sa mga naging pag-aaral, natuklasang karamihan sa mga magpapalayok noong 1827 ay mga kababaihan. Ngunit noong 1847, mayroon na ring mga kalalakihang naglalako nito.
+            </p>
+        </div>
+         
+        <div class="back-button">
+            <a href="trivia.html">TUKLAS-KAALAMAN!</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

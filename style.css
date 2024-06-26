@@ -1,0 +1,205 @@
+/*#640d14 COLOR NEEDED FOR LATER*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Lato', sans-serif; /* Add this line */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 230px;
+    cursor: pointer;
+    position: absolute; 
+    left: 80px;
+    z-index: 999; 
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px; /* Adjust spacing between links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    position: relative; /* Required for the pseudo-element */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: transparent; /* Start with transparent */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+    background-color: #bd0f1d; /* Change to the desired color on hover */
+}
+
+nav ul li a:hover {
+    color: #e21627; /* Change text color to match underline color on hover */
+}
+
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h1 {
+    color: white !important;
+    font-size: 80px !important;
+}
+
+p {
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #ff0000d8;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 5px 23px var(--animation-color))
+}
+  
+
+.card {
+    width: 230px;
+    height: 430px;
+    display: inline-block;
+    border-radius: 10px !important;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+/* Adjusted CSS for .card1, .card2, .card3 */
+/* Adjusted CSS for .card1, .card2, .card3 */
+.card1, .card2, .card3 {
+    position: relative;
+    overflow: hidden; /* Ensures the background image stays within the card bounds */
+}
+
+.card1::before, .card2::before, .card3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 1;
+    opacity: 0; /* Start with overlay hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for overlay */
+}
+
+.card1:hover::before, .card2:hover::before, .card3:hover::before {
+    opacity: 1; /* Show overlay on hover */
+}
+
+h5, .card p {
+    position: relative;
+    z-index: 2;
+    font-size: 20px; /* Decreased font size for better readability */
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* Subtle black shadow for contrast */
+    line-height: 1.5; /* Adjusted line spacing */
+}
+
+/* Specific background images */
+.card1 {
+    background-image: url(img/brgyBUTING.jpg);
+}
+
+.card2 {
+    background-image: url(img/brgyMAYBUNGA.jpg);
+}
+
+.card3 {
+    background-image: url(img/brgyROSARIO.jpg);
+}
