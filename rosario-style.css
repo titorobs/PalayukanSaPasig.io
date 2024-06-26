@@ -377,7 +377,7 @@ button:hover {
     flex-direction: column;
     padding: 20px;
     width: 90%;
-    height: 1000vh;
+    height: 1200vh;
     margin: 0 auto;
     gap: 20px;
 }
@@ -403,7 +403,7 @@ button:hover {
     text-align: center;
     color: black;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .content-1-1 {
@@ -414,13 +414,14 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
 .content-1-1 img {
-    height: 220px;
-    width: 400px;
+    height: 320px;
+    width: 500px;
 }
 
 .content-1:hover {
@@ -447,7 +448,7 @@ button:hover {
     flex-direction: column;
     padding: 50px;
     width: 90%;
-    height: 50vh;
+    height: 70vh;
     margin: 0 auto;
     gap: 30px;
 }
