@@ -306,8 +306,6 @@ button:hover {
     border-radius: 15px;
     padding: 20px;
     width: 40%;
-    background-color: #65000B;
-    color: white;
 }
 
 .trinidad-noon img {
@@ -325,8 +323,6 @@ button:hover {
     border-radius: 15px;
     padding: 20px;
     width: 40%;
-    background-color: #65000B;
-    color: white;
 }
 
 .trinidad-ngayon img {
@@ -412,12 +408,14 @@ button:hover {
 
 .content-1-1 {
     padding: 30px;
-    height: 320px;
+    height: 500px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
-    color: black;
-    border-radius: 20px;
 }
 
 .content-1-1 img {
@@ -483,4 +481,3 @@ button:hover {
     text-decoration: none;
     color: black;
 }
-
