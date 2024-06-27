@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comments</title>
     <style>
-
         body {
             font-family: Arial, sans-serif;
             background-color: #3C1414;
@@ -26,7 +25,7 @@
             background-color: rgba(101, 0, 11, 0.6); /* Semi-transparent background for better readability */
             border-radius: 10px; /* Rounded corners for the container */
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
-        } 
+        }
         h1 {
             text-align: center;
             color: white;
@@ -81,6 +80,24 @@
         .comment-section button:hover {
             background-color: #3C1414;
         }
+        .comments {
+            margin-top: 20px;
+        }
+        .comment {
+            background-color: #FFFFFF;
+            color: #3C1414;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .comment .details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .comment .details .author {
+            font-weight: bold;
+        }
         footer {
             margin-top: 20px;
             text-align: center;
@@ -94,40 +111,36 @@
             text-decoration: underline;
         }
         header {
-    width: 100%;
-    transition: background 0.5s ease;
-    background-color: #250902;
-    top: 0;
-    z-index: 99999999;
-    padding: 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    align-items: center;
-    margin: 10px auto;
-    width: 90%;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    padding: 0 20px;
-    color: #F1F6F9;
-    font-size: 14px;
-}
+            width: 100%;
+            transition: background 0.5s ease;
+            background-color: #250902;
+            top: 0;
+            z-index: 99999999;
+            padding: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            align-items: center;
+            margin: 10px auto;
+            width: 90%;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul li {
+            list-style: none;
+        }
+        nav ul li a {
+            text-decoration: none;
+            padding: 0 20px;
+            color: #F1F6F9;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -153,7 +166,7 @@ nav ul li a {
 
         <div class="comment-section">
             <h2>Mag-iwan ng Komento/Kuwento</h2>
-            <form>
+            <form id="commentForm">
                 <label for="name">Pangalan:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -161,16 +174,56 @@ nav ul li a {
                 <input type="text" id="topic" name="topic" required>
 
                 <label for="comment">Komento:</label>
-                <textarea id="comment" name="comment" rows="5" required></textarea>
+                <textarea id="commentInput" name="comment" rows="5" required></textarea>
 
-                <button type="submit">I-submit</button>
+                <button type="submit" id="publishBtn" disabled>I-submit</button>
             </form>
         </div>
+
+        <div class="comments" id="commentsContainer">
+            <!-- Comments will be added here dynamically -->
+        </div>
     </div>
+
     <footer>
         <div class="footer-container">
             <p>&copy; 2024 Ang Kultura ng Pagpapalayok sa Lungsod.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const commentInput = document.getElementById("commentInput");
+            const publishBtn = document.getElementById("publishBtn");
+            const commentsContainer = document.getElementById("commentsContainer");
+            const commentForm = document.getElementById("commentForm");
+
+            commentInput.addEventListener("input", function() {
+                publishBtn.disabled = !commentInput.value.trim();
+            });
+
+            commentForm.addEventListener("submit", function(event) {
+                event.preventDefault();
+                const name = document.getElementById("name").value;
+                const topic = document.getElementById("topic").value;
+                const comment = commentInput.value;
+
+                const commentHTML = `
+                    <div class="comment">
+                        <div class="details">
+                            <span class="author">${name}</span>
+                            <span class="date">${new Date().toLocaleString()}</span>
+                        </div>
+                        <div class="topic"><strong>Paksa:</strong> ${topic}</div>
+                        <div class="text">${comment}</div>
+                    </div>
+                `;
+
+                commentsContainer.innerHTML += commentHTML;
+                commentForm.reset();
+                publishBtn.disabled = true;
+            });
+        });
+    </script>
 </body>
 </html>
