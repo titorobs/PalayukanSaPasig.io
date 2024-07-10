@@ -63,6 +63,7 @@ nav ul li a {
     width: 100%;
     height: 91vh;
     padding: 30px;
+    text-align: center;
 }
 
 .buting-logo {
@@ -118,11 +119,12 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .content-title h1 {
     font-size: 70px;
-    color: #65000B;
+    color: red;
 }
 
 .content-tag {
@@ -131,6 +133,7 @@ nav ul li a {
     display: flex;
     color: white;
     margin: 40px;
+    text-align: center;
 }
 
 .content-tag p {
@@ -232,7 +235,7 @@ nav ul li a {
     color: #65000B;
 }
 
-.change{
+.change {
     color: white;
 }
 
@@ -249,7 +252,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column  ;
+    flex-direction: column;
     height: 80%;
     width: 30%;
     background-color: #F1F6F9;
@@ -261,7 +264,6 @@ nav ul li a {
     border-radius: 15px;
     color: #F1F6F9;
     font-size: 20px;
-    
 }
 
 .cards .card:hover {
@@ -282,7 +284,6 @@ nav ul li a {
     height: 50vh;
     margin: 0 auto;
     gap: 30px;
-    
 }
 
 .content-title-3 {
@@ -313,4 +314,110 @@ nav ul li a {
 .content-ref a {
     text-decoration: none;
     color: black;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .content-title h1 {
+        font-size: 60px;
+    }
+
+    .btn-get-started img {
+        height: 300px;
+        width: 800px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul li a {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .buting-logo img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .buting-tag p {
+        font-size: 28px;
+    }
+
+    .content-title h1 {
+        font-size: 50px;
+    }
+
+    .content-tag p {
+        font-size: 24px;
+    }
+
+    .btn-get-started img {
+        height: 200px;
+        width: 600px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .content-title-2 h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .facebook-icon img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .buting-logo img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .buting-tag p {
+        font-size: 20px;
+    }
+
+    .content-title h1 {
+        font-size: 40px;
+    }
+
+    .content-tag p {
+        font-size: 20px;
+    }
+
+    .btn-get-started img {
+        height: 150px;
+        width: 400px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .content-title-2 h1 {
+        font-size: 40px;
+    }
 }
