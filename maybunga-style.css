@@ -29,6 +29,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
 nav ul li {
@@ -40,6 +41,17 @@ nav ul li a {
     padding: 0 20px;
     color: #F1F6F9;
     font-size: 14px;
+}
+
+.facebook-icon {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.facebook-icon img {
+    width: 30px;
+    height: 30px;
 }
 .cover {
     width: 100%;
@@ -91,7 +103,7 @@ nav ul li a {
 }
 
 .buting-tag p {
-    font-size: 24px;
+    font-size: 30px;
     color: #F1F6F9;
     font-weight: 500;
     text-align: center;
@@ -102,9 +114,10 @@ nav ul li a {
     align-items: center;
     flex-direction: column;
     padding: 50px;
-    width: 90%;
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
+    background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
 }
 
 .content-title {
@@ -117,7 +130,7 @@ nav ul li a {
 
 .content-title h1 {
     font-size: 70px;
-    color: #65000B;
+    color: red;
 }
 
 .content-tag {
@@ -127,8 +140,9 @@ nav ul li a {
 }
 
 .content-tag p {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
+    color: white;
 }
 
 
@@ -205,10 +219,11 @@ nav ul li a {
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    width: 90%;
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
     gap: 50px;
+    background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
 }
 
 .content-title-2 {
@@ -222,7 +237,7 @@ nav ul li a {
 .content-title-2 h1 {
     font-size: 50px;
     text-align: center;
-    color: #65000B;
+    color: red;
 }
 
 .content-tag-2 {
@@ -237,12 +252,12 @@ nav ul li a {
     text-align: center;
     padding: 30px;
     color: #F1F6F9;
-    font-size: 18px;
+    font-size: 25px;
 } 
 
 .content-tag-2 p a{
 text-decoration: none;
-color: yellow;
+color: orange;
 }
 
 .content-tag-2 p a:hover{
@@ -278,10 +293,11 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     padding: 20px;
-    width: 90%;
+    width: 100%;
     height: 190vh;
     margin: 0 auto;
     gap: 50px;
+    background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
 }
 
 .trinidad {
@@ -289,13 +305,13 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 95vh;
+    height: 105vh;
     width: 100%;
 }
 
 .trinidad-title h1 {
     font-size: 50px;
-    color: #65000B;
+    color:red;
 }
 
 .trinidad-container {
@@ -322,8 +338,8 @@ button:hover {
 }
 
 .trinidad-noon img {
-    height: 400px;
-    width: 450px;
+    height: 600px;
+    width: 500px;
 }
 
 .trinidad-ngayon {
@@ -350,31 +366,18 @@ button:hover {
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    width: 90%;
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
     gap: 40px;
+    background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
 }   
-
-.trivia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20%;
-    width: 100%;
-}
-
-.trivia h1 {
-    font-size: 50px;
-    text-align: center;
-    color: #65000B;
-}
 
 .trivia-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60%;
+    height: 100%;
 }
 
 .trivia-content-1 img {
@@ -383,18 +386,34 @@ button:hover {
 
 .trivia-content-2 {
     padding: 40px;
-    font-size: 24px;
+    font-size: 30px;
+    color: white;
 }
+
+.trivia-content-2 h1 {
+    font-size: 50px;
+    text-align: center;
+    color: red;
+    margin-bottom: 20px; /* Add some spacing between the heading and the paragraph */
+}
+
+.trivia-content-2 p a {
+    
+    color:orange;
+    text-decoration: none;
+}
+   
 
 .story-1 {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    width: 90%;
-    height: 850vh;
+    width: 100%;
+    height: 730vh;
     margin: 0 auto;
     gap: 20px;
+    background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
 }
 
 .title {
@@ -407,34 +426,90 @@ button:hover {
 .title h1 {
     font-size: 50px;
     text-align: center;
-    color: #65000B;
+    color:red;
 }
 
 .content-1 {
     padding: 30px;
-    height: 250px;
+    height: 1100px;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    color: black;
+    text-align: justify;
+    color: white;
     border-radius: 20px;
 }
 
 .content-1:hover {
-    background-color: #65000B;
+    background-color:#65000B;
     color: #F1F6F9;
 }
 
 .content-1 p {  
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .content-1 p a {
     text-decoration: none;
-    color: yellow;
+    color: orange;
 }
 
 .content-1 p a:hover {
+    color: rgb(1, 255, 1);
+}
+
+.content-vid {
+    padding: 30px;
+    height: 150px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.content-vid:hover {
+    background-color: #65000B;
+    color: #F1F6F9;
+}
+
+.content-vid p {  
+    font-size: 25px;
+}
+
+.content-vid p a {
+    text-decoration: none;
+    color: orange;
+}
+
+.content-vid p a:hover {
+    color: rgb(1, 255, 1);
+}
+
+.content-1dot1 {
+    padding: 30px;
+    height: 750px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.content-1dot1:hover {
+    background-color: #65000B;
+    color: #F1F6F9;
+}
+
+.content-1dot1 p {  
+    font-size: 25px;
+}
+
+.content-1dot1 p a {
+    text-decoration: none;
+    color: orange;
+}
+
+.content-1dot1 p a:hover {
     color: rgb(1, 255, 1);
 }
 
@@ -453,7 +528,7 @@ button:hover {
 
 .content-2 h1 {
     text-align: center;
-    color: #65000B;
+    color: white;
     font-size: 30px;
 }
 
@@ -462,7 +537,7 @@ button:hover {
     align-items: center;
     flex-direction: column;
     padding: 50px;
-    width: 90%;
+    width: 100%;
     height: 60vh;
     margin: 0 auto;
     gap: 30px;
@@ -479,7 +554,7 @@ button:hover {
 
 .content-title-3 h1 {
     font-size: 50px;
-    color: #65000B;
+    color: red;
 }
 
 .content-ref {

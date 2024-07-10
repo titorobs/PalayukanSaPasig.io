@@ -29,6 +29,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
 nav ul li {
@@ -40,6 +41,17 @@ nav ul li a {
     padding: 0 20px;
     color: #F1F6F9;
     font-size: 14px;
+}
+
+.facebook-icon {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.facebook-icon img {
+    width: 30px;
+    height: 30px;
 }
 
 .buting-cover-page {
@@ -84,7 +96,7 @@ nav ul li a {
 }
 
 .buting-tag p {
-    font-size: 24px;
+    font-size: 30px;
     color: #F1F6F9;
     font-weight: 500;
     text-align: center;
@@ -95,9 +107,10 @@ nav ul li a {
     align-items: center;
     flex-direction: column;
     padding: 50px;
-    width: 90%;
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
+    background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
 }
 
 .content-title {
@@ -110,7 +123,7 @@ nav ul li a {
 
 .content-title h1 {
     font-size: 70px;
-    color: #65000B;
+    color: red;
 }
 
 .content-tag {
@@ -118,10 +131,11 @@ nav ul li a {
     width: 100%;
     display: flex;
     font-size: 25px;
+    color: white;
 }
 
 .content-tag p {
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -199,10 +213,11 @@ nav ul li a {
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    width: 90%;
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
     gap: 50px;
+    background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
 }
 
 .content-title-2 {
@@ -216,7 +231,7 @@ nav ul li a {
 .content-title-2 h1 {
     font-size: 50px;
     text-align: center;
-    color: #65000B;
+    color: red;
 }
 
 .content-tag-2 {
@@ -231,11 +246,11 @@ nav ul li a {
     text-align: center;
     padding: 30px;
     color: #F1F6F9;
-    font-size: 23px;
+    font-size: 25px;
 }
 
 .content-tag-2 p a{
-    color: yellow;
+    color: orange;
     text-decoration: none;
 }
 
@@ -268,10 +283,11 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     padding: 20px;
-    width: 90%;
-    height: 170vh;
+    width: 100%;
+    height: 190vh;
     margin: 0 auto;
-    gap: 50px;   
+    gap: 50px;  
+    background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg'); 
 }
 
 .trinidad {
@@ -285,7 +301,7 @@ button:hover {
 
 .trinidad-title h1 {
     font-size: 50px;
-    color: #65000B;
+    color:red;
 }
 
 .trinidad-container {
@@ -294,6 +310,7 @@ button:hover {
     align-items: center;
     padding: 20px;
     width: 100%;
+    color: white;
 }
 
 .trinidad-noon {
@@ -307,10 +324,14 @@ button:hover {
     padding: 20px;
     width: 40%;
 }
+.trinidad-noon:hover {
+    background-color: #65000B;
+    color: #F1F6F9;
+}
 
 .trinidad-noon img {
-    height: 400px;
-    width: 450px;
+    height: 550px;
+    width:600px;
 }
 
 .trinidad-ngayon {
@@ -324,21 +345,26 @@ button:hover {
     padding: 20px;
     width: 40%;
 }
-
-.trinidad-ngayon img {
-    height: 400px;
-    width: 450px;
+.trinidad-ngayon:hover {
+    background-color: #65000B;
+    color: #F1F6F9;
 }
+.trinidad-ngayon img {
+    height: 550px;
+    width:600px;
+}
+
 
 .container-4 {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    width: 90%;
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
     gap: 40px;
+    background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
 }   
 
 .trivia {
@@ -352,7 +378,7 @@ button:hover {
 .trivia h1 {
     font-size: 50px;
     text-align: center;
-    color: #65000B;
+    color: red;
 }
 
 .trivia-container {
@@ -368,7 +394,8 @@ button:hover {
 
 .trivia-content-2 {
     padding: 40px;
-    font-size: 22px;
+    font-size: 30px;
+    color: white;
 }
 
 .story-1 {
@@ -376,10 +403,11 @@ button:hover {
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    width: 90%;
-    height: 1100vh;
+    width: 100%;
+    height: 1600vh;
     margin: 0 auto;
     gap: 50px;
+    background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
 }
 
 .title {
@@ -389,26 +417,96 @@ button:hover {
     width: 100%;
 }
 
+.title-content {
+    text-align: center; /* Align content center within the flex container */
+}
+
 .title h1 {
     font-size: 50px;
-    text-align: center;
-    color: #65000B;
+    color: red;
+    margin-bottom: 0; /* Remove default bottom margin of h1 */
 }
+
+.title p {
+    font-size: 25px;
+    color: red;
+    margin-top: 5px; /* Add space between h1 and p */
+}
+
+.content-2 {
+    padding: 30px;
+    height: 1500px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+    color: white;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+.content-2:hover {
+    background-color: #65000B;
+    color: #F1F6F9;
+}
+
+.content-2 p {  
+    font-size: 20   px;
+}
+
+.content-2 p a {
+    text-decoration: none;
+    color: orange;
+}
+
+.content-2 p a:hover {
+    color: rgb(1, 255, 1);
+}
+
+.content-3 {
+    padding: 30px;
+    height: 1500px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+    color: white;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+.content-3:hover {
+    background-color: #65000B;
+    color: #F1F6F9;
+}
+
+.content-3 p {  
+    font-size: 20   px;
+}
+
+.content-3 p a {
+    text-decoration: none;
+    color: orange;
+}
+
+.content-3 p a:hover {
+    color: rgb(1, 255, 1);
+}
+
 
 .content-1 {
     padding: 30px;
-    height: 400px;
+    height: 1000px;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    color: black;
+    text-align: justify;
+    color: white;
     border-radius: 20px;
-    font-size: 18px;
+    font-size: 25px;
 }
+
 
 .content-1-1 {
     padding: 30px;
-    height: 500px;
+    height: 1000px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -417,11 +515,41 @@ button:hover {
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
+    color: white;
+}
+
+.content-1-1:hover {
+    background-color: #65000B;
+    color: #F1F6F9;
 }
 
 .content-1-1 img {
-    height: 320px;
-    width: 500px;
+    height: 700px;
+    width: 900px;
+}
+
+.content-2-2 {
+    padding: 30px;
+    height: 1500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+}
+
+.content-2-2:hover {
+    background-color: #65000B;
+    color: #F1F6F9;
+}
+
+.content-2-2 img {
+    height: 700px;
+    width: 900px;
 }
 
 .content-1:hover {
@@ -435,12 +563,68 @@ button:hover {
 
 .content-1 p a {
     text-decoration: none;
-    color: yellow;
+    color: orange;
 }
 
 .content-1 p a:hover {
     color: rgb(1, 255, 1);
 }
+
+
+.content-0 {
+    padding: 30px;
+    height: 620px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+    color: white;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+.content-0:hover {
+    background-color: #65000B;
+    color: #F1F6F9;
+}
+
+.content-0 p {  
+    font-size: 20   px;
+}
+
+.content-0 p a {
+    text-decoration: none;
+    color: orange;
+}
+
+.content-0 p a:hover {
+    color: rgb(1, 255, 1);
+}
+
+
+.content-vid{
+    padding: 30px;
+    height: 700px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.content-vid iframe {
+    height: 500px;
+    width: 100%;
+}
+
+.content-vid h1 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.content-vid p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
 
 .container-5 {
     display: flex;
@@ -481,4 +665,9 @@ button:hover {
 .content-ref a {
     text-decoration: none;
     color: black;
+}
+
+.poster{
+    height: 500px;
+    width: 1400px;
 }

@@ -185,8 +185,9 @@ p {
 h5, .card p {
     position: relative;
     z-index: 2;
-    font-size: 20px; /* Decreased font size for better readability */
+    font-size: 40px; /* Decreased font size for better readability */
     color: white;
+    text-align: center;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* Subtle black shadow for contrast */
     line-height: 1.5; /* Adjusted line spacing */
 }
