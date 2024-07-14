@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Lato', sans-serif; /* Add this line */
+    font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -79,7 +79,6 @@ nav ul li a:hover {
     color: #e21627; /* Change text color to match underline color on hover */
 }
 
-
 .row {
     display: flex;
     height: 88%;
@@ -97,7 +96,7 @@ h1 {
 
 p {
     color: white;
-    font-size: 15px;
+    font-size: 25px;
     line-height: 15px;
 }
 
@@ -140,9 +139,8 @@ p {
 /* hover */
 .button:hover .hover-text {
   width: 100%;
-  filter: drop-shadow(0 5px 23px var(--animation-color))
+  filter: drop-shadow(0 5px 23px var(--animation-color));
 }
-  
 
 .card {
     width: 230px;
@@ -158,11 +156,9 @@ p {
     transition: transform 0.5s;
 }
 
-/* Adjusted CSS for .card1, .card2, .card3 */
-/* Adjusted CSS for .card1, .card2, .card3 */
 .card1, .card2, .card3 {
     position: relative;
-    overflow: hidden; /* Ensures the background image stays within the card bounds */
+    overflow: hidden;
 }
 
 .card1::before, .card2::before, .card3::before {
@@ -174,25 +170,24 @@ p {
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
     z-index: 1;
-    opacity: 0; /* Start with overlay hidden */
-    transition: opacity 0.3s ease; /* Smooth transition for overlay */
+    opacity: 0; 
+    transition: opacity 0.3s ease;
 }
 
 .card1:hover::before, .card2:hover::before, .card3:hover::before {
-    opacity: 1; /* Show overlay on hover */
+    opacity: 1;
 }
 
 h5, .card p {
     position: relative;
     z-index: 2;
-    font-size: 40px; /* Decreased font size for better readability */
+    font-size: 40px;
     color: white;
     text-align: center;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* Subtle black shadow for contrast */
-    line-height: 1.5; /* Adjusted line spacing */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    line-height: 1.5;
 }
 
-/* Specific background images */
 .card1 {
     background-image: url(img/brgyBUTING.jpg);
 }
@@ -203,4 +198,72 @@ h5, .card p {
 
 .card3 {
     background-image: url(img/brgyROSARIO.jpg);
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 150px;
+        left: 20px;
+        top: 10px;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .row {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .col {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px !important;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .button {
+        --fs-size: 1.5em;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    h5, .card p {
+        font-size: 24px;
+    }
 }
