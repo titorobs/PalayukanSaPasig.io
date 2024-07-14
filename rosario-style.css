@@ -842,6 +842,7 @@ button:hover {
 @media (max-width: 768px) {
     .content-1 {
         font-size: 20px;
+        height: 1500px;
     }
 }
 
@@ -849,12 +850,13 @@ button:hover {
 @media (max-width: 480px) {
      .content-1 {
         font-size: 18px;
+        height: 1500px;
     }
 }
 
 .content-2 .content-3 .content-0 {
     padding: 30px;
-    height: 1000px;
+    height: 1500px;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: justify;
@@ -867,6 +869,7 @@ button:hover {
 @media (max-width: 1200px) {
     .content-2 .content-3 .content-0  {
         font-size: 22px;
+        height: 1500px;
     }
 }
 
@@ -874,6 +877,7 @@ button:hover {
 @media (max-width: 768px) {
     .content-2 .content-3 .content-0  {
         font-size: 20px;
+        height: 1500px;
     }
 }
 
@@ -881,6 +885,7 @@ button:hover {
 @media (max-width: 480px) {
      .content-2 .content-3 .content-0  {
         font-size: 18px;
+        height: 1500px;
     }
 }
 
