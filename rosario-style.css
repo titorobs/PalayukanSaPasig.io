@@ -709,7 +709,7 @@ button:hover {
     flex-direction: column;
     padding: 20px;
     width: 100%;
-    height: 1550vh; /* Default height */
+    height: 1750vh; /* Default height */
     margin: 0 auto;
     gap: 50px;
     background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
@@ -718,28 +718,28 @@ button:hover {
 /* Large screens */
 @media only screen and (max-width: 1200px) {
     .story-1 {
-        height: 1530vh;
+        height: 1650vh;
     }
 }
 
 /* Medium screens */
 @media only screen and (max-width: 1000px) {
     .story-1 {
-        height: 1430vh;
+        height: 1550vh;
     }
 }
 
 /* Small screens */
 @media only screen and (max-width: 768px) {
     .story-1 {
-        height: 1230vh;
+        height: 1450vh;
     }
 }
 
 /* Extra small screens */
 @media only screen and (max-width: 576px) {
     .story-1 {
-        height: 1030vh;
+        height: 1350vh;
     }
 }
 
