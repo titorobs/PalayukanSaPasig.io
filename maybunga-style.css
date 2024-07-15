@@ -133,7 +133,6 @@ nav ul li a {
     flex-direction: column;
     padding: 50px;
     width: 100%;
-    height: 100vh;
     margin: 0 auto;
     background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
 }
@@ -237,7 +236,6 @@ nav ul li a {
     flex-direction: column;
     padding: 20px;
     width: 100%;
-    height: 100vh;
     margin: 0 auto;
     gap: 50px;
     background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
@@ -311,7 +309,6 @@ button:hover {
     flex-direction: column;
     padding: 20px;
     width: 100%;
-    height: 190vh;
     margin: 0 auto;
     gap: 50px;
     background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
@@ -370,7 +367,6 @@ button:hover {
     flex-direction: column;
     padding: 20px;
     width: 100%;
-    height: 100vh;
     margin: 0 auto;
     gap: 40px;
     background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
@@ -537,7 +533,6 @@ button:hover {
     flex-direction: column;
     padding: 50px;
     width: 100%;
-    height: 60vh;
     margin: 0 auto;
     gap: 30px;
 }
