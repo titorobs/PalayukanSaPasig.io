@@ -179,6 +179,7 @@ nav ul li a {
 .content-title h1 {
     font-size: 70px;
     color: red;
+    text-align: center;
 }
 
 .content-tag {
@@ -312,15 +313,17 @@ nav ul li a {
         font-size: 24px;
     }
 
+    .buting-logo img,
     .trinidad-noon img,
     .trinidad-ngayon img,
     .halik-noon img,
     .halik-ngayon img {
-        height: 300px;
-        width: 350px;
+        max-width: 100%; /* Ensures images don't exceed their container width */
+        height: auto; /* Allows images to scale proportionally */
+        display: block; /* Ensures images behave like block elements */
     }
 }
-
+    
 @media screen and (max-width: 768px) {
     .buting-logo img {
         height: 200px;
