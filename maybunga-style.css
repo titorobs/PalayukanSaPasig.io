@@ -426,7 +426,6 @@ button:hover {
 
 .content-1 {
     padding: 30px;
-    height: 1100px;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: justify;
@@ -482,7 +481,6 @@ button:hover {
 
 .content-1dot1 {
     padding: 30px;
-    height: 750px;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: justify;
@@ -510,7 +508,6 @@ button:hover {
 
 .content-2 {
     padding: 30px;
-    height: 600px;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
