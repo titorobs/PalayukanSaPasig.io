@@ -62,22 +62,6 @@ nav ul li a {
     display: block; /* Ensures the image behaves like a block element */
 }
 
-/* Media queries for different screen sizes */
-@media only screen and (max-width: 768px) {
-    .cover img {
-        /* Adjust styles for smaller screens */
-        height: auto;
-        max-width: 100%;
-    }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-    .cover img {
-        /* Adjust styles for medium-sized screens */
-        height: auto;
-        max-width: 100%;
-    }
-}
 
 .buting-cover-page {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('img/MAYBUNGA COVER .jpg');
@@ -86,8 +70,8 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 91vh;
     padding: 30px;
+    height: 95vh;
 }
 
 .buting-logo {
@@ -138,7 +122,7 @@ nav ul li a {
 }
 
 .content-title {
-    height: 30%;
+  
     width: 100%;
     display: flex;
     align-items: center;
@@ -151,7 +135,7 @@ nav ul li a {
 }
 
 .content-tag {
-    height: 40%;
+
     width: 100%;
     display: flex;
 }
@@ -259,7 +243,6 @@ nav ul li a {
     background-color: #65000B;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     width: 100%;
-    height: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -319,7 +302,6 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 105vh;
     width: 100%;
 }
 
@@ -376,7 +358,6 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
 }
 
 .trivia-content-1 img {
@@ -508,6 +489,7 @@ button:hover {
 
 .content-2 {
     padding: 30px;
+
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
@@ -539,7 +521,6 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 20%;
     width: 100%;
 }
 
@@ -552,7 +533,6 @@ button:hover {
     background-color: #F1F6F9;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     width: 100%;
-    height: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
