@@ -666,6 +666,7 @@ button:hover {
     padding: 20px;
     width: 100%;
     margin: 0 auto;
+    gap: 40px;
     background: linear-gradient(rgba(66, 26, 26, 0.74), rgba(29, 3, 3, 0.87)), url('img/backgroundImage.jpg');
 }   
 
