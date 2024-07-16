@@ -253,8 +253,8 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 80%;
-    width: 30%;
+    height: 100%;
+    width: 40%;
     background-color: #F1F6F9;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
@@ -263,7 +263,7 @@ nav ul li a {
     backdrop-filter: blur(20px);
     border-radius: 15px;
     color: #F1F6F9;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .cards .card:hover {
