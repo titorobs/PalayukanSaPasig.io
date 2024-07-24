@@ -361,7 +361,7 @@ nav ul li a {
 }
 
 .buting-cover-page {
-    background: linear-gradient(180deg , rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('img/brgyROSARIO.jpg');
+    background: linear-gradient(180deg , rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('img/brgyMAYBUNGA.jpg');
     background-size: cover;
     display: flex;
     align-items: center;    
@@ -937,7 +937,7 @@ button:hover {
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
-    color: white;
+   color: white;
 }
 
 .content-1-1:hover {
@@ -1034,6 +1034,11 @@ button:hover {
     height: 300px;
     width: 700px;
 }
+
+.resize{
+    font-size: 13px;
+}
+
 
 .content-vid h1 {
     text-align: center;
