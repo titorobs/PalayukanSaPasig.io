@@ -110,7 +110,7 @@ nav ul li a {
 }
 
 .buting-cover-page {
-    background: linear-gradient(180deg , rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('img/brgyMAYBUNGA1.jpg');
+    background: linear-gradient(180deg , rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('brgyMAYBUNGA1.jpg');
     background-size: cover;
     display: flex;
     align-items: center;    
