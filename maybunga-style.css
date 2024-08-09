@@ -735,6 +735,25 @@ button:hover {
     text-align: center;
 }
 
+.title p {
+    color: white;
+    margin-bottom: 0; /* Remove default bottom margin of h1 */
+    text-align: center;
+}
+
+.title2 h1 {
+    font-size: 50px;
+    color: red;
+    margin-bottom: 0; /* Remove default bottom margin of h1 */
+    text-align: center;
+}
+
+.title2 p {
+    color: white;
+    margin-bottom: 0; /* Remove default bottom margin of h1 */
+    text-align: center;
+}
+
 
 .content-vid {
     padding: 30px;

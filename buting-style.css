@@ -229,9 +229,14 @@ nav ul li a {
 }
 
 .content-title-2 h1 {
-    font-size: 70px;
+    font-size: 50px;
     text-align: center;
-    color: #65000B;
+    color: red;
+}
+
+.content-title-2 p {
+    text-align: center;
+    color: white;
 }
 
 .change {
@@ -263,6 +268,16 @@ nav ul li a {
     color: #F1F6F9;
     font-size: 30px;
 }
+
+.card p a {
+    text-decoration: none;
+    color: orange;
+}
+
+.card p a:hover {
+    color: rgb(1, 255, 1);
+}
+
 
 .cards .card:hover {
     background-color: #250902;
